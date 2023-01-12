@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODECADEMY</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha3-iYQeCzEYFbKjA84/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+      #ca {
+        font-weight: 100px;
+      }
+
+      .g2 {
+        border: 1px solid white;
+      }
+      .you {
+        transition: 1s;
+      }
+      .you:hover {
+        padding: 1rem;
+        background: white;
+      }
+      .pop {
+        transition: 1s;
+        position: relative;
+      }
+      .pop:hover {
+        /* transform: translate( -5px , -5px); */
+        top: 10px;
+        left: 10px;
+      }
+      .solar {
+        text-align: center;
+        background-color: #10162f;
+        color: #ffffff;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #fff0e5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/favicon.ico"
+            width="100%"
+            style="margin-left: 7%"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="whatsapp.html"
+                >WHATSAPP</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="neco.html"
+                >NECO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >ASANA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="meta.html"
+                >META</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >INMOTION</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >SALESFORCE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >CAPITAL</a
+              >
+            </li>
+            <div class="dap" style="margin: 1px; margin-left: 160px">
+              <i class="bi bi-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="bi bi-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="bi bi-person-circle"></i
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-dark btn-sm">
+                Get Started
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="background-color: #fff0e5">
+      <div class="container">
+        <div class="row" style="background-color: #fff0e5">
+          <div class="col-lg p-5" id="z">
+            <img src="images/woman.webp" style="height: 100%; width: 100%" />
+          </div>
+          <div class="col-lg p-5" id="z" style="font-size: 20px">
+            <form id="ca">
+              <h4 style="font-weight: bold">
+                Join the millions learning to code<br />
+                with Codecademy for free
+              </h4>
+              <label>Email</label><br />
+              <input class="j" type="text" style="width: 80%" /><br />
+              <br />
+              <label>Password</label><br />
+              <input class="j" type="password" style="width: 80%" /><br />
+              <br />
+              <button type="button" class="btn btn-primary">Sign Up</button>
+              <br />
+              <h6>By signing up for Codecademy, you agree to Codecademy's</h6>
+              <br />
+              <p>
+                <a href="#">Terms Of Service</a>&<a href="#">Privacy Policy</a>
+              </p>
+              <br />
+              <h6 style="font-weight: bold">Or sign up using:</h6>
+              <br />
+              <i class="bi bi-info-square-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="bi bi-google"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="background-color: #fff0e5">
+      <div class="container">
+        <div
+          class="row"
+          style="background-color: #fff0e5; padding-top: 9%; padding-bottom: 9%"
+        >
+          <div class="col-lg-6 col-sm-6">
+            <h1 style="font-weight: bolder">What’s your goal?</h1>
+            <br />
+            <br />
+            <div class="you">
+              <h4 style="font-weight: bold">Build Your Career</h4>
+              <p>
+                Career part are our own complete offering,<br />with everything
+                you need to land the job.
+              </p>
+            </div>
+            <br />
+            <hr style="width: 82%" />
+            <div class="you">
+              <h4
+                style="font-weight: bold; padding-top: 3%; padding-bottom: 3%"
+              >
+                Gain A Skill
+              </h4>
+            </div>
+            <hr style="width: 82%" />
+            <div class="you">
+              <h4
+                style="font-weight: bold; padding-top: 3%; padding-bottom: 3%"
+              >
+                Learn A Language
+              </h4>
+            </div>
+            <hr style="width: 82%" />
+            <div class="you">
+              <h4
+                style="font-weight: bold; padding-top: 3%; padding-bottom: 3%"
+              >
+                Explore a Subject
+              </h4>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="row" style="margin-top: 10%">
+              <div
+                class="col-lg-5 pop col-sm-12"
+                style="border: 1px solid black; background: white"
+              >
+                <div class="pop">
+                  <h6 style="margin-top: 12px">Pro Career Path</h6>
+                  <h5 style="font-weight: bold">Full-Stack Engineer</h5>
+                  <h6 style="font-size: small">
+                    <i class="bi bi-dot"></i>Begginer friendly,168 lessons
+                  </h6>
+                  <br />
+                  <p style="text-align: right">Job Essiential</p>
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div
+                class="col-lg-5 pop col-sm-12"
+                style="border: 1px solid black; background: white"
+              >
+                <div class="pop">
+                  <h6 style="margin-top: 12px">Pro Career Path</h6>
+                  <h5 style="font-weight: bold">Front-End Engineer</h5>
+                  <h6 style="font-size: small">
+                    <i class="bi bi-dot"></i>Begginer friendly,129 lessons
+                  </h6>
+                  <br />
+                  <p style="text-align: right">Job Essiential</p>
+                </div>
+              </div>
+              <div
+                class="col-lg-5 pop col-sm-12"
+                style="
+                  border: 1px solid black;
+                  margin-top: 9%;
+                  background: white;
+                "
+              >
+                <div class="pop">
+                  <h6 style="margin-top: 12px">Pro Career Path</h6>
+                  <p style="font-weight: bold">
+                    Data Scientist:Machine Learning Specialist
+                  </p>
+                  <h6 style="font-size: small">
+                    <i class="bi bi-dot"></i>Begginer friendly,78 lessons
+                  </h6>
+                  <br />
+                  <p style="text-align: right">Job Essiential</p>
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div
+                class="col-lg-5 pop col-sm-12"
+                style="
+                  border: 1px solid black;
+                  margin-top: 9%;
+                  background: white;
+                "
+              >
+                <div class="pop">
+                  <h6 style="margin-top: 12px">Pro Career Path</h6>
+                  <h5 style="font-weight: bold">Computer Science</h5>
+                  <h6 style="font-size: small">
+                    <i class="bi bi-dot"></i>Begginer friendly,82 lessons
+                  </h6>
+                  <br /><br />
+                  <p style="text-align: right">Foundations</p>
+                </div>
+              </div>
+              <p style="text-align: right; margin-top: 9%; color: #3a10e5">
+                Browse your Catalog<i class="bi bi-arrow-right-short"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="background-color: #10162f">
+      <div class="container">
+        <div
+          class="row"
+          style="
+            background-color: #10162f;
+            color: #ffffff;
+            padding-top: 10%;
+            padding-bottom: 10%;
+          "
+        >
+          <div class="col-lg-6 col-md-12">
+            <div class="container">
+              <table
+                style="width: 40vw"
+                cellspacing="3"
+                cellpadding="5"
+                border="1"
+                class="table table-dark table-bordered table-hover table-striped-columns"
+              >
+                <tr>
+                  <th colspan="4" class="text-start">
+                    <i class="bi bi-chevron-left"></i>
+                  </th>
+                </tr>
+                <br />
+                <tr>
+                  <td colspan="2" class="text-start">
+                    <i class="bi bi-chevron-left"></i>code
+                  </td>
+                  <td colspan="2" class="text-end">
+                    Output <i class="bi bi-chevron-right"></i>
+                  </td>
+                </tr>
+                <br />
+                <tr>
+                  <td colspan="2" class="py-5 text-center">Loading</td>
+                  <td colspan="2" class="py-5"></td>
+                </tr>
+                <br />
+                <tr>
+                  <td colspan="4" class="text-end">
+                    <button class="btn btn-warning btn-sm text-light">
+                      Run
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top: 5%">
+            <p>Beginners welcome</p>
+            <h1>
+              Start coding in<br />
+              seconds
+            </h1>
+            <p>
+              Go ahead, give it a try. Our hands-on learning<br />
+              environment means you'll be writing real code from<br />
+              your very first lesson.
+            </p>
+            <p>
+              <button
+                type="button"
+                class="btn btn-outline-warning"
+                style="color: #ffd50f"
+              >
+                Continue lesson</button
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; More beginner
+              courses
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div
+        class="row"
+        style="
+          line-height: 35px;
+          background-color: #ffd300;
+          padding: 5%;
+          padding-left: 10%;
+        "
+      >
+        <div class="col-lg-8 col-sm-6">
+          <h1 style="font-weight: bold">
+            Not sure where<br />
+            to start?
+          </h1>
+          <p>
+            This short quiz will sort you out. Answer a<br />few simple
+            questions to get personal career<br />
+            advice and course recommendations.
+          </p>
+          <button type="button" class="btn btn-primary">Take the quiz</button>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img src="images/book.svg" />
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #fff0e5">
+      <div class="container">
+        <div class="row" style="background-color: #fff0e5; padding: 3%">
+          <div class="col-lg-6 col-sm-6">
+            <h1 style="font-weight: bold">Stories from real people</h1>
+            <p>Watch and read stories from the Codecademy community.</p>
+            <br />
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <h6 style="color: blue; margin-left: 62%; margin-top: 50px">
+              Explore more stories<i class="bi bi-arrow-right-short"></i>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-bottom: 60px; background-color: #fff0e5">
+          <div class="col-lg-3 col-sm-12">
+            <img src="images/GiacomoSorbi.jpeg" style="width: 100%" />
+            <h4 style="font-weight: bold">
+              Taking a different<br />
+              path:One Team Lead's story
+            </h4>
+            <p>
+              Giacomo S., Team Lead,<br />
+              London
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <img src="images/AlisonVoghel.jpg" style="width: 100%" />
+            <h4 style="font-weight: bold">
+              See how this architect<br />
+              Switched to UX design
+            </h4>
+            <p>Alisson V., Senior UX<br />Designer @ Acquia, Columbus</p>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <img src="images/ManuelSousa.jpg" style="width: 100%" />
+            <h4 style="font-weight: bold">
+              How One Developer Learned to code with her disability
+            </h4>
+            <p>Rosita R., FIONT-END Developer , BIummen</p>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <img src="images/Rosita.jpg" style="width: 100%" />
+            <h4 style="font-weight: bold">
+              Lesson from a Chef turned Deputy CTO
+            </h4>
+            <p>Manuel S., Deputy CTO @ PaxFamilia , BIUSSELS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div
+        class="row"
+        style="
+          line-height: 15px;
+          background-color: #3a10e5;
+          color: white;
+          padding: 5%;
+          padding-left: 10%;
+        "
+      >
+        <div class="col-lg-6 col-sm-3">
+          <h1>
+            Join in on<br />
+            something big
+          </h1>
+        </div>
+        <div class="col-lg-2 col-sm-3">
+          <h1>50M</h1>
+          <h6>Learners</h6>
+        </div>
+        <div class="col-lg-2 col-sm-3">
+          <h1>190+</h1>
+          <h6>Countries</h6>
+        </div>
+        <div class="col-lg-2 col-sm-3">
+          <h1>3.7B</h1>
+          <h6>Code submits</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div
+        class="row"
+        style="
+          line-height: 35px;
+          background-color: #10162f;
+          color: #ffffff;
+          padding: 5%;
+          padding-left: 10%;
+        "
+      >
+        <div class="col-lg-8 col-sm-6">
+          <h6>
+            <span class="g2">C</span>
+            <span class="g2">o</span>
+            <span class="g2">d</span>
+            <span class="g2">e</span>
+            <span id="g3">c</span>
+            <span id="g4">a</span>
+            <span id="g5">d</span>
+            <span id="g6">E</span>
+            <span id="g7">m</span>
+            <span id="g8">y</span>
+          </h6>
+          <h1 style="font-weight: bold">Level Up Your <br />Team Skill.</h1>
+          <p>
+            Give your team the knowledge, experience, and<br />
+            confidence they need to tackle any problem.
+          </p>
+          <button type="button" class="btn btn-warning">
+            Explore Business plan
+          </button>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img src="images/row.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div
+        class="row"
+        style="
+          line-height: 45px;
+          background-color: #3a10e5;
+          color: #e1dbfb;
+          padding: 5%;
+        "
+      >
+        <div class="col-lg-6 col-sm-6">
+          <img src="Images/hop.png" style="width: 100%" />
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <h1 style="font-weight: bold">Start for free</h1>
+          <p>
+            If you’ve made it this far, you must be at least<br />
+            a little curious. Sign up and take the first step<br />
+            toward your goals.
+          </p>
+          <button type="button" class="btn btn-warning">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #fff0e5">
+      <div class="container">
+        <div class="row" style="line-height: 40px; color: #1b2037; padding: 6%">
+          <div class="col-lg-2 col-sm-4">
+            <h6 style="font-weight: bold">
+              Codecademy
+              <p>from skillsoft</p>
+            </h6>
+
+            <h6>About</h6>
+            <h6>Career</h6>
+            <h6>Affliates</h6>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /><br />
+            <p>Mobile</p>
+            <img src="images/0010.svg" />
+            <br /><br />
+            <img src="images/get.png" />
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <h6 style="font-weight: bold">RESOURCES</h6>
+            <br />
+            <h6>Projects</h6>
+            <h6>Interview Challenges</h6>
+            <h6>Docs</h6>
+            <h6>Cheatsheets</h6>
+            <h6>Articles</h6>
+            <h6>Videos</h6>
+            <h6>Blog</h6>
+            <h6>Career Center</h6>
+            <br />
+            <p style="padding-top: 12px">INDIVIDUAL PLANS</p>
+
+            <h6>Pro Membership</h6>
+            <h6>For Students</h6>
+            <br />
+
+            <p>Support</p>
+
+            <h6>Help Center</h6>
+          </div>
+          <div class="col-lg-2 col-sm-4 border-end border-3">
+            <h6 style="font-weight: bold">COMMUNITY</h6>
+            <br />
+            <h6>Forums</h6>
+            <h6>Discord</h6>
+            <h6>Chapters</h6>
+            <h6>Events</h6>
+            <h6>Learner Stories</h6>
+            <br /><br /><br /><br />
+            <br />
+            <p>ENTERPRISE PLAN</p>
+            <p>Business Solution</p>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <h6 style="font-weight: bold">COURSE CATALOG</h6>
+            <br />
+            <h6 style="font-weight: bold">Subject</h6>
+            <br />
+            <h6>Web Development</h6>
+            <h6>Data Science</h6>
+            <h6>Computer Science</h6>
+            <h6>Developer Tools</h6>
+            <h6>Machine Learning</h6>
+            <h6>Code Foundations</h6>
+            <h6>Web Design</h6>
+            <h6>—</h6>
+            <h6>Full Catalog</h6>
+            <h6>Beta Content</h6>
+            <h6>Roadmap</h6>
+          </div>
+          <div class="col-lg-2 col-sm-4" style="padding: 2.5%">
+            <br />
+            <h6 style="font-weight: bold">Languages</h6>
+            <br />
+            <h6>HTML & CSS</h6>
+            <h6>Python</h6>
+            <h6>JavaScript</h6>
+            <h6>Java</h6>
+            <h6>SQL</h6>
+            <h6>Bash/Shell</h6>
+            <h6>Ruby</h6>
+          </div>
+          <div class="col-lg-2 col-sm-4" style="padding: 2%">
+            <br /><br /><br />
+            <h6>C + +</h6>
+            <h6>R</h6>
+            <h6>C#</h6>
+            <h6>PHP</h6>
+            <h6>Go</h6>
+            <h6>Swift</h6>
+            <h6>Kotlin</h6>
+          </div>
+        </div>
+      </div>
+      <hr style="width: 80%; margin-left: 10%" class="text-center" />
+      <h6 style="margin-left: 10%; font-size: small">
+        Privacy Policy&nbsp;| Cookie Policy&nbsp; | Do Not Sell My Personal
+        Information&nbsp; | Terms
+        <p style="margin-left: 68%; font-size: small; margin-top: -16px">
+          Made with ❤️in NYC © 2022 Codecademy
+        </p>
+      </h6>
+    </div>
+    <div class="solar">
+      <p style="font-weight: bold">
+        CaVEat:This is a student project and not trying to clone the existing
+        Page
+      </p>
+    </div>
+  </body>
+</html>
