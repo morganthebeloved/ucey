@@ -1,0 +1,156 @@
+/*@640px hide the banks logo
+@1025px collapse navbar
+*/
+.iconcolor{color:#86A32D;}
+.leftspace{margin-left:0.5em;}
+/*#colophon{background:#003366;padding:1.5em 0 2em;color:#fff;font-family:Arial, Helvetica, sans-serif;font-size:0.9rem;border-top:solid 1px #ccc;}
+#colophon a{color:#fff;text-decoration:none;}*/
+
+body {
+	background: #fff;
+	height: 100%;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto;
+}
+
+nav.navbar {
+	background: #003366;
+	max-height: 60px;
+}
+
+span.navbar-toggler {
+	outline: 2px solid white;
+	border-radius: 0px;
+	color: white;
+}
+
+div.offcanvas {
+	background: #333333;
+}
+
+.offcanvas-body {
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+div.offcanvas-body ul li.nav-item:hover {
+	background: #111;
+}
+
+button.navbtn, button.navbtn2 {
+	width: 55px;
+	font-size: .6em;
+	font-weight: bold;
+
+}
+
+
+section.nav {
+	background: #d4001a;
+	max-height: 27px;
+	margin: 1px auto;
+	outline: 2px solid white;
+}
+
+section.nav ul li {
+	outline: 0.001px solid white;
+	max-height: 27px;
+}
+
+section.nav ul li a {
+	font-size: .8em;
+	color: #fff;
+	font-weight: bold;
+	font-family: sans-serif;
+	max-height: 27px;
+}
+
+section.nav ul li:hover, section.nav ul li a:hover {
+	color: white;
+	background: #aa051a;
+}
+
+div.bg {
+	background: #e5e2da;
+}
+
+div.bg div.row div h1 {
+	font-size:3em;
+}
+
+.ht {
+	font-size:1.21875em
+}
+
+.btn-loan, .btn-price {
+	background: #003366;
+	color: white;
+	border-radius: 0px;
+	font-size: .7em	;
+	font-weight: bold;
+}
+
+.btn-price:hover {
+	background: #003366;
+	color: white;
+	border-radius: 0px;
+	font-size: .7em	;
+	font-weight: bold;
+}
+
+div.bg-nav {
+	background: #003366;
+}
+
+.ftxt {
+	font-size: .5em;
+}
+
+@media (min-width: 1025px) {
+	.offcanvas-body, button.navbtn2 {
+		visibility: hidden;
+	}
+	span.navbar-toggler {
+		visibility: hidden;
+	}
+	section.nav {
+ 	visibility: visible;
+ }
+}
+@media (max-width: 640px) {
+   .bnk {
+   	visibility: hidden;
+   }
+
+   div.cont {
+   	visibility: hidden;
+   	height: 30px;
+   }
+}
+
+@media (max-width:1024px){
+	.offcanvas-body, button.navbtn2 {
+		visibility: visible;
+	}
+	span.navbar-toggler {
+		position: absolute;
+		left: 5px;
+	}
+	.navbar-brand img {
+		position: relative;
+		left: 40px;
+	}
+ button.navbtn {
+ 	visibility: hidden;
+ }
+ section.nav {
+ 	visibility: hidden;
+ }
+}
