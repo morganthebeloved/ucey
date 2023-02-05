@@ -1,0 +1,286 @@
+/*
+Navbar collapse at 1279px
+*/
+
+html, body {
+	background-color: #fff;
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+
+* {
+	line-height: line-height: 25px;
+}
+
+.card {
+	background-color: #fff;
+}
+
+nav.navbar {
+	max-height: 75px;
+}
+
+button.navbar-toggler {
+
+}
+
+.navbar-brand img {
+	width: 70px;
+}
+
+ul li.nav-item a.nav-link {
+	font-size: 1.2em;
+	margin-top: 15px;
+	color: rgb(0, 46, 105);
+	font-weight: bold;
+}
+
+p.icon {
+	margin: 30px 10px 0px 10px;
+	color: rgb(0, 46, 105);
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+button.up-btn {
+	height: 40px;
+	width: 120px;
+	margin: 20px 10px 0px 10px;
+}
+
+p.search:hover {
+	background-color: lightskyblue;
+	border-radius: 50%;
+}
+
+p.contact {
+	max-height: 60px;
+	font-size: .85em;
+}
+
+div.in-vas {
+	display: none;
+}
+
+p.in-icon {
+	color: rgb(0, 46, 105);
+	font-size: .89em;
+	font-weight: bold;
+}
+
+h1, .prim, .h-text, .lh-txt, .b-col {
+	/*color: #dddfe1;*/
+	color: rgb(0, 46, 105);
+}
+
+div.btn-hold {
+	position: relative;
+	bottom: 200px;
+}
+
+.prim {
+	font-size: 2em;
+}
+
+.card-s {
+	height: 525px;
+	/*overflow: auto;*/
+}
+
+.card-e {
+	height: 420px;
+}
+
+.card-v {
+	height: 440px;
+}
+
+.card-h {
+	height: 510px;
+}
+
+.h-text {
+	margin-left: 30px;
+	margin-top: 25px;
+}
+
+.act-link a {
+	font-size: 1.2em;
+	text-decoration: none;
+	color:  black;
+}
+
+h1.dlv {
+	font-size: 2.85em;
+	font-family: sans-serif;
+}
+
+div.btn-action button {
+	border-width: 3px;
+	width: 180px;
+}
+
+.bg-prim {
+	background-color: rgb(0, 46, 105);
+}
+
+span.module {
+	background-color: #dddfe1;
+	color: rgb(0, 46, 105);
+	padding: 8px;
+	margin: 15px 30px;
+	font-size: .95em;
+	max-width: 150px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+p.up-nav {
+	background-color: #dddfe1;
+	color: rgb(0, 46, 105);
+	padding: 8px;
+	font-weight: bold;
+	margin: 0px 30px;
+	display: inline-block;
+	max-width: 200px;	
+	border-radius: 10px;
+}
+
+.card-sm {
+	height: 180px;
+}
+
+.all-btn {
+	border-width: 2px;
+}
+
+.all-btn:hover {
+	background-color: #dddfe1;
+	color: rgb(0, 46, 105);
+	border-color: rgb(0, 46, 105);
+}
+
+.all-btnN:hover {
+	background-color: rgb(0, 46, 105);
+	border-color: rgb(0, 46, 105);
+}
+
+.card-ab {
+	/*height: 380px;*/
+}
+
+.card-ab div img {
+	/*box-sizing: content-box;*/
+	/*height: 80%;*/
+}
+
+.cl-img {
+	width: 100px;
+}
+
+a.fs {
+	font-size: .8em;
+}
+
+a.navlink {
+	color: skyblue;
+}
+
+.btn-outline-light:hover {
+	border-color: white;
+	background-color: rgb(0, 46, 105);
+	color: white;
+}
+
+span.navbar-toggler {
+	display: none;
+}
+
+@media (min-width: 1280px) {
+	p.user {
+		display: none;
+	}
+	.offcanvas-body {
+		visibility: visible;
+	}
+	
+}
+
+div.shp {
+	width: 100px; 
+	height: 40px;
+	background-color: rgb(0, 46, 105);
+	position:fixed;
+	/*left: 85%;*/
+	right: 5%;
+	top: 88%;
+	font-size: .65em;
+	color: white;
+	font-weight: bold;
+	border-radius: 15px;
+}
+
+div.shp img {
+	width: 25px;
+}
+
+@media (max-width: 1279px) {
+	span.navbar-toggler {
+		position: absolute;
+		left: 5px;
+		display: inline-block;
+	}
+	div.links-ft {
+		display: none;
+	}
+	p.contact, p.globe {
+		display: none;
+	}
+	.navbar-brand img {
+		position: relative;
+		left: 50px;
+	}
+	div.in-vas {
+		display: block;
+	}
+
+	p.icon {
+		margin: 5px 10px 0px 10px;
+		color: rgb(0, 46, 105);
+	}
+
+	button.up-btn {
+		margin: 0px 10px 5px 10px;
+	}
+}
+
+@media (max-width: 992px) {
+	div.btn-hold {
+		bottom: 170px;
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	div.btn-hold {
+		bottom: 100px;
+	}
+	h1.dlv {
+		font-size: 2.15em;
+	}
+	p.ft-txt, .navlink {
+		font-size: .85em;
+	}
+	.navbar-brand img {
+		width: 30px;
+	}
+	p.icon {
+		margin: 5px 5px 0px 0px;;
+	}
+	button.up-btn {
+		/*margin: 0px 10px 5px 10px;*/
+		width: 80px;
+		font-size: .55em;
+	}
+}
