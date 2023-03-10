@@ -21,6 +21,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <style>
+      .error{
+        color:red;
+      }
+      
       #ca {
         font-weight: 100px;
       }
@@ -145,18 +149,23 @@
             <img src="images/woman.webp" style="height: 100%; width: 100%" />
           </div>
           <div class="col-lg p-5" id="z" style="font-size: 20px">
-            <form id="ca">
+          
               <h4 style="font-weight: bold">
                 Join the millions learning to code<br />
                 with Codecademy for free
               </h4>
-              <label>Email</label><br />
-              <input class="j" type="text" style="width: 80%" /><br />
-              <br />
-              <label>Password</label><br />
-              <input class="j" type="password" style="width: 80%" /><br />
-              <br />
-              <button type="button" btn btn-primary>Sign Up</button>
+              <form class="rounded-4 shadow-lg px-3 py-5" method="post" onsubmit="return(validate())" name="myForm"
+              id="poo">
+                <label class="form-label">E-MAIL</label>
+                  <input name="g" class="form-control" type="email" placeholder="Input your E-mail" required>
+                <br />
+                <label class="form-label">CREATE A PASSWORD</label>
+                  <input name="b" class="form-control" type="password" required>
+                <br />
+                <button type="submit" class="rounded-5 btn btn-lg btn-primary col-lg-6">SIGN-UP</button>
+
+              </form>
+              
               <br />
               <h6>By signing up for Codecademy, you agree to Codecademy's</h6>
               <br />
@@ -169,7 +178,7 @@
               <i class="bi bi-info-square-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="bi bi-google"></i>&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            </form>
+           
           </div>
         </div>
       </div>
@@ -663,6 +672,33 @@
         Page
       </p> 
     </div>
-    
+    <script>
+      function validate() {
+              let a = /^[a-zA-Z0-9]+$/;
+              let b = /^[a-zA-Z0-9!@#$%^&^*]{7,16}$/;
+              let c = /^[a-zA-Z]+$/;
+              let d = /^[a-zA-Z]+$/;
+              let f = /^[0-9]+$/;
+              let g = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+              let h = /^[0-9]{3,5}$/
+      
+      
+      if (!document.myForm.b.value.match(b)) {
+                // alert("password is required")
+                document.myForm.b.focus();
+                return false;
+              }
+      
+              if (!document.myForm.g.value.match(g)) {
+                // alert("Input your E-mail")
+                document.myForm.g.focus();
+                return false;
+              }
+              else {
+          return true;
+        }
+      }
+
+      </script>
   </body>
 </html>
