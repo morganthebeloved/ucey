@@ -154,14 +154,19 @@
                 Join the millions learning to code<br />
                 with Codecademy for free
               </h4>
-              <form class="rounded-4 shadow-lg px-3 py-5" method="post" onsubmit="return(validate())" name="myForm"
+              <form class="rounded-4 shadow-lg px-3 py-5" method="post" onsubmit="return(validate1())" name="myForm"
               id="poo">
-                <label class="form-label">E-MAIL</label>
-                  <input name="g" class="form-control" type="email" placeholder="Input your E-mail" required>
+                <label class="form-label">Email</label>
                 <br />
-                <label class="form-label">CREATE A PASSWORD</label>
-                  <input name="b" class="form-control" type="password" required>
+                  <input id="text" name="email" >
+                  <br />
+                  <span id="go"></span>
                 <br />
+                <label class="form-label">Password</label>
+                <br />
+                  <input id="text" name="pass">
+                  <span id="we"></span>
+                <br /><br />
                 <button type="submit" class="rounded-5 btn btn-lg btn-primary col-lg-6">SIGN-UP</button>
 
               </form>
@@ -673,25 +678,25 @@
       </p> 
     </div>
     <script>
-      function validate() {
-              let a = /^[a-zA-Z0-9]+$/;
-              let b = /^[a-zA-Z0-9!@#$%^&^*]{7,16}$/;
-              let c = /^[a-zA-Z]+$/;
-              let d = /^[a-zA-Z]+$/;
-              let f = /^[0-9]+$/;
-              let g = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-              let h = /^[0-9]{3,5}$/
+      function validate1() {
+              let mail1 = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+              let passe = /^[a-zA-Z0-9!@#$%^&^*]{7,16}$/;
+              
       
       
-      if (!document.myForm.b.value.match(b)) {
-                // alert("password is required")
-                document.myForm.b.focus();
+      if (!document.myForm.email.value.match(mail1)) {
+                document.querySelector("#go").innerHTML="please your mail in correct format";
+                document.querySelector("#go").style.color = "red";
+                // go.textContent = "";
+                // go.style.color="blue";
+                document.myForm.email.focus();
                 return false;
               }
       
-              if (!document.myForm.g.value.match(g)) {
-                // alert("Input your E-mail")
-                document.myForm.g.focus();
+              if (!document.myForm.pass.value.match(passe)) {
+              document.querySelector("#we").innerHTML="your password must be correct";
+              document.querySelector("#we").style.color = "red";
+                document.myForm.pass.focus();
                 return false;
               }
               else {
